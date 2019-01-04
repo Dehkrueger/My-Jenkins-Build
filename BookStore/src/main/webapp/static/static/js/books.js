@@ -9,7 +9,7 @@ function getBooks(){
     xhttp.open("GET","books");
     xhttp.send();
 
-    function displayBooks{
+    function displayBooks(){
         if(xhttp.readyState===4 && xhttp.status===200){
             books = JSON.parse(xhttp.responseText);
             books.forEach(function(book, index){
